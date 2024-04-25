@@ -1,0 +1,339 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0.5rem 0; /* Adjust as needed */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Makes the entire area clickable */
+}
+
+nav a:hover, nav a.active {
+    background-color: #555; /* Change as per your design */
+}
+
+
+/* Burger menu - initially hidden */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Introduction Styles */
+#introduction {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#introduction h1 {
+    margin-bottom: 1rem;
+}
+
+/* About and Services Section Styles */
+#about, #services {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#about img, #services img {
+    width: 33%;
+}
+
+#about div, #services div {
+    width: 60%;
+}
+
+/* Contact and Footer Styles */
+#contact, footer {
+    padding: 2rem;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        padding: 0; /* Adjust as needed for smaller screens */
+    }
+}
+
+
+    #about, #services {
+        flex-direction: column;
+    }
+
+    #about img, #services img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #about div, #services div {
+        width: 100%;
+    }
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}
+#orderButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  /* Order Section Styles */
+
+  #order-form {
+    
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .order-form-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-top: 10px;
+    }
+    
+    input,
+    textarea {
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+  
+    /* Products Section Styles */
+    #products  {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .product-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    .product-info {
+        text-align: center;
+        max-width: 600px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    
+    img {
+        width: 50%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        color: #555;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+/* This is for search input and search button  */
+/* Existing styles... */
+
+#search-input {
+    width: 70%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#search-btn {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* This is for customer service only  */
+#services {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.services-header {
+    background: linear-gradient(to right, #515253, #bdc0c3);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.service {
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.service-details {
+    padding: 20px;
+}
+
+.service-details h2 {
+    color: #464b4e;
+}
+
+.services-footer {
+    background: linear-gradient(to right, #484949, #bdc1c4);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-image {
+    display: inline-block;
+    margin-right: 10px; /* Add margin to provide spacing between images */
+}

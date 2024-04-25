@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quote-container">
+        <section id="quoteSection">
+            <!-- Displayed quote will go here -->
+        </section>
+    </div>
+
+    <button id="generateButton">Generate Quote</button>
+
+    <form id="addQuoteForm">
+        <label for="quoteInput">Quote:</label>
+        <input type="text" id="quoteInput" required>
+        <label for="authorInput">Author:</label>
+        <input type="text" id="authorInput" required>
+        <button type="button" id="addQuoteButton">Add Quote</button>
+    </form>
+
+    <div id="additionalButtons">
+        <button id="charCountButton">Character Count (with spaces)</button>
+        <button id="charCountNoSpaceButton">Character Count (without spaces)</button>
+        <button id="wordCountButton">Word Count</button>
+        <button id="likeButton">Like</button>
+    </div>
+
+    <form id="filterForm">
+        <label for="authorFilter">Filter by Author:</label>
+        <input type="text" id="authorFilter">
+        <button type="button" id="filterButton">Filter Quotes</button>
+    </form>
+
+    <button id="prevButton">Previous</button>
+    <button id="nextButton">Next</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

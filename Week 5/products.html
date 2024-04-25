@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Furniture Product Page</title>
+    <script>
+        // JavaScript code within mypage.html
+        console.log(document.title); // Outputs: My Page
+    </script>
+</head>
+<body>
+    <nav>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul> 
+       
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    <div class="product-container">
+        <div class="product-info">
+            <!-- List of product images -->
+            <img src="images/Rustic Chair.jpg" alt="Chair1 searchinput" class="product-image">
+            <img src="images/Table.jpg" alt="table searchinput" class="product-image">
+            <img src="images/shoe rack.jpg" alt="shoe rack searchinput" class="product-image">
+            <!--  -->
+            <section id="introduction">
+            <h1>Search your products</h1>
+            <p>-</p>
+            <button id="order-btn">Order Now</button>
+            <br>
+
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-btn">Search</button>
+        </div>
+    </div>
+
+    <script src="script_products.js"></script>
+</body>
+</html>
